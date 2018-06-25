@@ -1,0 +1,13 @@
+module.exports = class Google {
+
+match(message) {
+return message.content.startsWith('!Montre moi')
+}
+
+action (message) {
+  let args = message.content.split(' ')
+  args.shift()
+  message.reply('https://www.google.fr/imghp?hl=fr&tab=wi' + args.join('%20'))
+}
+
+}
