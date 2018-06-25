@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 
-const Google = require('/commands/google')
+const Google = require('.gitignore/commands')
 
 var bot = new Discord.Client();
 
