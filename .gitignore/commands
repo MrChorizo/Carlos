@@ -1,10 +1,10 @@
 module.exports = class Google {
 
-match(message) {
+static match(message) {
 return message.content.startsWith('!Montre moi')
 }
 
-action (message) {
+static action (message) {
   let args = message.content.split(' ')
   args.shift()
   message.reply('https://www.google.fr/imghp?hl=fr&tab=wi' + args.join('%20'))
