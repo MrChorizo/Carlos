@@ -1,6 +1,9 @@
 const Discord = require("discord.js");
 
+const Google = require('./commands/Google')
+
 var bot = new Discord.Client();
+
 
 bot.on("ready", function() {
     bot.user.setGame("Baiser ta mère");
@@ -12,6 +15,9 @@ bot.on('guildMemberAdd', function (member) {
 }
 
 bot.on('message', function (message) {
+    if Google.match(message)) {
+        Google.action(message)
+    }
     if (message.content === 'ping') {
         message.channel.send('pong')
     }
