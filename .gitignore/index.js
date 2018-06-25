@@ -7,6 +7,10 @@ bot.on("ready", function() {
     console.log("Carlos débarque dans le game");
 });
 
+bot.on('guildMemberAdd', function (member) {
+    member.createDM().then(function (channel) {
+        channel.send('Wesh le shab')
+
 bot.on('message', function (message) {
     if (message.content === 'ping') {
         message.channel.send('pong')
