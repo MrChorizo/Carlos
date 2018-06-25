@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 
 bot.on("ready", function() {
-    bot.user.setGame("Carlos, !help");
+    bot.user.setGame("Baiser ta mère");
     console.log("Carlos débarque dans le game");
 });
 
