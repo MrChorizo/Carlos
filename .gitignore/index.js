@@ -7,4 +7,10 @@ bot.on("ready", function() {
     console.log("Carlos débarque dans le game");
 });
 
+bot.on('message', function (message) {
+    if (message.content === 'ping') {
+        message.reply('pong')
+    }
+})
+
 bot.login("NDYwNjE0NzUwMTc1MjMyMDA0.DhJkGg.Khblelnig_LfR-JKBBqpgEYy3_Y");
