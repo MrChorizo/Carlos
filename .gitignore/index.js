@@ -37,10 +37,4 @@ bot.on('message', function (message) {
     }
 })
 
-bot.on('message', function (message) {
-    if (message.content === 'lol') {
-        message.channel.send('lol c 1 deadgame')
-    }
-})
-
 bot.login("NDYwNjE0NzUwMTc1MjMyMDA0.DhJkGg.Khblelnig_LfR-JKBBqpgEYy3_Y");
